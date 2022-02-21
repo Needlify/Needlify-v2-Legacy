@@ -11,5 +11,7 @@ assignees: ''
 
 ## Template
 
+## Issues liées
+
 ## Tâches à réaliser
 - [ ]
