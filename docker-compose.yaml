@@ -1,29 +1,55 @@
-version: "3.1"
+version: "3.8"
 
 services:
-   php:
-      build:
-         context: .
-         dockerfile: Dockerfile
-      ports:
-         - 80:80
-      volumes:
-         - ./:/var/www/html
-         - ./apache:/etc/apache2/sites-available
 
    database:
+      container_name: database
       image: mariadb
       restart: always
       environment:
          MYSQL_ROOT_PASSWORD: password
       volumes:
          - mariadb-data:/var/lib/mariadb
+      networks:
+         - dev
 
    adminer:
+      container_name: adminer
       image: adminer
       restart: always
       ports:
-         - 8080:8080
+         - 8082:8080
+      networks:
+         - dev
+
+   maildev:
+      image: maildev/maildev
+      container_name: mail
+      command: bin/maildev --web 80 --smtp 25 --hide-extensions STARTTLS
+      ports:
+         - 8081:80
+      restart: always
+      networks:
+         - dev
+   
+   web:
+      container_name: web
+      restart: always
+      build:
+         context: .
+         dockerfile: Dockerfile
+      ports:
+         - 8080:80
+      volumes:
+         - ./:/var/www/html
+         - ./apache:/etc/apache2/sites-enabled
+      networks:
+         - dev
+      depends_on:
+         - database
 
 volumes:
    mariadb-data:
+   
+networks:
+   dev:

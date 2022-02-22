@@ -10,17 +10,16 @@ RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
     echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen && \
     locale-gen
 
-RUN docker-php-ext-configure \
-        intl \
-    &&  docker-php-ext-install \
-        pdo pdo_mysql opcache intl zip dom mbstring gd xsl
+RUN docker-php-ext-configure intl
+RUN docker-php-ext-install pdo pdo_mysql gd opcache intl zip calendar dom mbstring zip xsl gd
+RUN pecl install apcu && docker-php-ext-enable apcu
 
-# ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
+RUN chmod -R 0777 /var/www/
+
+CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
+
+# ENV APACHE_DOCUMENT_ROOT /var/www/html/public
 # RUN sed -ri -e 's!/var/www/html!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/sites-available/*.conf
 # RUN sed -ri -e 's!/var/www/!${APACHE_DOCUMENT_ROOT}!g' /etc/apache2/apache2.conf /etc/apache2/conf-available/*.conf
 
-
-
-CMD tail -f /dev/null
-
-WORKDIR /var/www/html/
+WORKDIR /var/www/html
