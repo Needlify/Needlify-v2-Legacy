@@ -1,6 +1,13 @@
 **Issue de référence** : #000 -> Nom de l'issue
 
-## Description des changements
+## Description
+
+## Type de changement
+
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Breaking change
+- [ ] This change requires a documentation update
 
 ## Screenshots
 
