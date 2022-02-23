@@ -15,3 +15,5 @@ Vérifier que chaque élément de la liste suivante soit respecté avant d'effec
 - [ ] Les noms de variables et des fonctions ont du sens
 - [ ] Il y a suffisamment de commentaires lorsque le code est compliqué
 - [ ] L'indentation du code est correcte
+- [ ] Les tests unitaires et fonctionnels ont été mis à jour
+- [ ] Les tests unitaires et fonctionnales sont toujours valides
