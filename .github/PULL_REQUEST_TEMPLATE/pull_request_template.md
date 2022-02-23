@@ -6,8 +6,8 @@
 
 - [ ] Bug fix
 - [ ] New feature
-- [ ] Breaking change
-- [ ] This change requires a documentation update
+- [ ] Changement majeur
+- [ ] Ce changement nécessite une mise à jour de la documentation
 
 ## Screenshots
 
