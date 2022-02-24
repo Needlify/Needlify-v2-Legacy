@@ -14,6 +14,10 @@ This section is dedicated to the documentation of Needlify. In the [documentatio
 
 Thank you for considering contributing to the Needlify project ! The contribution guide can be found in the [contributing file](https://github.com/Needlify/Needlify-v2/blob/master/CONTRIBUTING.md).
 
+In order to maintain some consistency in the code, be sure to read the documents in the Wikis section of this repository. They contain all the elements you need to know to contribute to this project.
+
+If notions are missing, you can notify it by creating an issue.
+
 ## Code of Conduct
 
 In order to ensure that the Needlify community is welcoming to all, please review and abide by the [Code of Conduct](https://github.com/Needlify/Needlify-v2/blob/master/CODE_OF_CONDUCT.md).
