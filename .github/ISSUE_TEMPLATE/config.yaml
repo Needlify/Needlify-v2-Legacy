@@ -1,0 +1,17 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Documentation 📚
+    url: https://docs.needlify.com/
+    about: Learn how to use the website
+  - name: Wiki 📝
+    url: https://github.com/Needlify/Needlify-v2/wiki
+    about: Check out the official docs for answers to common questions and learn how to contribute
+  - name: Questions & discussions 🤔
+    url: https://github.com/Needlify/Needlify-v2/discussions
+    about: Ask questions, request features & discuss
+  - name: Community Discord 💬
+    url: https://discord.gg/aVYBcexpEE
+    about: Community discussions, interactive support, contributor help
+  - name: Twitter account 🦜
+    url: https://twitter.com/NeedlifyCom
+    about: Official twitter account with the latest news
