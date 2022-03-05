@@ -1,4 +1,6 @@
 {
+    "name": "needlify/needlify",
+    "description": "A knowledge sharing platform around IT and new technologies",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
