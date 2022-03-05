@@ -1,6 +1,7 @@
 parameters:
   level: 1
   editorUrl: 'phpstorm://open?file=%%file%%&line=%%line%%'
+	bootstrap: %rootDir%/tests/bootstrap.php
   paths:
     - src
     - tests
