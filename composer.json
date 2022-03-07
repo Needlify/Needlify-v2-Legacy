@@ -2,7 +2,7 @@
     "name": "needlify/needlify",
     "description": "A knowledge sharing platform around IT and new technologies",
     "type": "project",
-    "license": "proprietary",
+    "license": "AGPL-3.0",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
