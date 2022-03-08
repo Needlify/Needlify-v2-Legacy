@@ -1,0 +1,9 @@
+[submodule "components"]
+	path = components
+	url = https://github.com/Needlify/ui
+[submodule "storybook"]
+	path = storybook
+	url = https://github.com/Needlify/storybook
+[submodule "ui"]
+	path = ui
+	url = https://github.com/Needlify/ui
