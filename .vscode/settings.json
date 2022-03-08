@@ -1,3 +1,15 @@
 {
-   "git.ignoreLimitWarning": true
+   "git.ignoreLimitWarning": true,
+   "editor.tabSize": 3,
+   "[javascript][vue]": {
+      "editor.formatOnSave": false
+   },
+   "editor.codeActionsOnSave": {
+      "source.fixAll": true
+   },
+   "[json][twig][css][scss]": {
+      "editor.formatOnSave": true
+   },
+   "files.eol": "\n",
+   "prettier.printWidth": 160
 }
