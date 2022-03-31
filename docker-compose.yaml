@@ -41,8 +41,8 @@ services:
       ports:
          - 8080:80
       volumes:
-         - ./:/var/www/html
-         - ./apache:/etc/apache2/sites-enabled
+         - ./:/var/www
+         # - ./apache:/etc/apache2/sites-enabled
       networks:
          - dev
       depends_on:
